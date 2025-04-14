@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+	--color-background: #02080a;
+	--color-foreground: #e4f4f9;
+	--color-primary: #88cae6;
+	--color-secondary: #3b1b7f;
+	--color-accent: #ad45d8;
+	--font-sans: "Ubuntu Sans", sans-serif;
+	--font-mono: "Ubuntu Mono", monospace;
+}
+
+@theme inline {
+	--color-background: var(--color-background);
+	--color-foreground: var(--color-foreground);
+	--color-primary: var(--color-primary);
+	--color-secondary: var(--color-secondary);
+	--color-accent: var(--color-accent);
+	--font-sans: var(--font-sans);
+	--font-mono: var(--font-mono);
+}
+
+@layer base {
+	* {
+		@apply border-foreground/20 font-sans;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	button {
+		@apply cursor-pointer;
+	}
+}
