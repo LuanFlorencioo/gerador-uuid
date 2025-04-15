@@ -1,28 +1,16 @@
-<script setup lang="ts">
-import { Fingerprint } from "lucide-vue-next";
-import { motion } from "motion-v";
+<script setup>
+import CardResult from "@/components/CardResult.vue";
+import CardPainel from "@/components/CardPainel.vue";
+
+console.log(
+	"Seja bem-vindo ao meu projeto Vue 3 com Tailwind CSS e Vite! 🚀👩‍🚀",
+);
 </script>
 
 <template>
-  <motion.main
-    :initial="{ opacity: 0 }"
-    :animate="{ opacity: 1 }"
-    :transition="{ delay: .8 }"
-    class="w-full min-h-screen flex flex-col items-center justify-center gap-8"
-  >
-    <Fingerprint class="text-accent" />
+  <main class="w-full min-h-screen bg-gradient-to-t from-secondary/10 flex flex-col sm:flex-row sm:items-center sm:justify-center">
+    <CardPainel />
 
-    <h1 class="font-bold text-2xl text-primary">Hello World</h1>
-
-    <p class="max-w-[300px] font-mono leading-6 line-clamp-4 text-center">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab impedit et numquam inventore repudiandae labore quisquam corporis illum ipsa nobis corrupti id, necessitatibus voluptas culpa odio repellendus omnis dolorem suscipit facere voluptates libero perspiciatis a. Quasi, earum ut illum voluptate quisquam maxime quis, assumenda dolorum in sapiente eum praesentium!
-    </p>
-
-    <button class="w-max h-16 px-8 bg-gradient-to-b rounded-lg from-secondary to-secondary font-bold text-3xl">
-      Get Started
-    </button>
-  </motion.main>
+    <CardResult />
+  </main>
 </template>
-
-<style scoped>
-</style>
