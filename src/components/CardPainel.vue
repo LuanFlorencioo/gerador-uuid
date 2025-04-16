@@ -1,10 +1,15 @@
 <script setup>
 import Logo from "@/components/Logo.vue";
 import ButtonGenerate from "@/components/ButtonGenerate.vue";
+import { motion } from "motion-v";
 </script>
 
 <template>
-  <div class="w-full sm:max-w-[350px] px-4 py-8 sm:px-8 sm:py-24 bg-gradient-to-b from-secondary/10 to-secondary/40 rounded-b-4xl sm:rounded-4xl flex flex-col items-center gap-8 sm:gap-16 selection:bg-accent">
+  <motion.div
+    :initial="{ opacity: 0, y: 20 }"
+    :animate="{ opacity: 1, y: 0, transition: { delay: 0.3 } }"
+    class="w-full sm:max-w-[350px] px-4 py-8 sm:px-8 sm:py-24 bg-gradient-to-b from-secondary/10 to-secondary/40 rounded-b-4xl sm:rounded-4xl flex flex-col items-center gap-8 sm:gap-16 selection:bg-accent"
+  >
     <div class="flex flex-col items-center gap-2">
       <Logo />
 
@@ -16,5 +21,5 @@ import ButtonGenerate from "@/components/ButtonGenerate.vue";
     </p>
 
     <ButtonGenerate />
-  </div>
+  </motion.div>
 </template>
