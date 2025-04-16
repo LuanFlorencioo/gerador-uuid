@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { defineProps, ref } from "vue";
-import { CheckCheck, Copy } from "lucide-vue-next";
+import { Copy } from "lucide-vue-next";
 import { motion } from "motion-v";
-import { useUUIDListStore } from "@/stores/uuidList";
+import { useUUIDListStore } from "./../stores/uuidList";
 
 type Props = {
 	uuid: string;
@@ -12,7 +12,6 @@ type Props = {
 
 const props = defineProps<Props>();
 const store = useUUIDListStore();
-const mouseIsOver = ref(false);
 const hasClicked = ref(props.hasUsed);
 const hasCopied = ref(false);
 

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { Fingerprint } from "lucide-vue-next";
 </script>
 

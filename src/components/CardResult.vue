@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { motion } from "motion-v";
-import UuidItem from "@/components/UuidItem.vue";
-import { useUUIDListStore } from "@/stores/uuidList";
+import UuidItem from "./UuidItem.vue";
+import { useUUIDListStore } from "./../stores/uuidList";
 
 const store = useUUIDListStore();
 const uuidList = ref(store.uuidList);

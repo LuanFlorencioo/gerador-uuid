@@ -1,5 +1,5 @@
-<script setup>
-import { useUUIDListStore } from "@/stores/uuidList";
+<script setup lang="ts">
+import { useUUIDListStore } from "./../stores/uuidList";
 
 const store = useUUIDListStore();
 </script>

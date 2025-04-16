@@ -1,6 +1,6 @@
-<script setup>
-import CardResult from "@/components/CardResult.vue";
-import CardPainel from "@/components/CardPainel.vue";
+<script setup lang="ts">
+import CardResult from "./components/CardResult.vue";
+import CardPainel from "./components/CardPainel.vue";
 
 console.log(
 	"Seja bem-vindo ao meu projeto Vue 3 com Tailwind CSS e Vite! 🚀👩‍🚀",

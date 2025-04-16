@@ -1,7 +1,7 @@
-<script setup>
-import Logo from "@/components/Logo.vue";
-import ButtonGenerate from "@/components/ButtonGenerate.vue";
+<script setup lang="ts">
 import { motion } from "motion-v";
+import Logo from "./Logo.vue";
+import ButtonGenerate from "./ButtonGenerate.vue";
 </script>
 
 <template>
